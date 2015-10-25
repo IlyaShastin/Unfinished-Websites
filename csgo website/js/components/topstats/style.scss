@@ -1,0 +1,18 @@
+
+#TopStats {
+	display: inline-block;
+	background: #202E3B;
+	box-shadow: 1px 1px 10px 5px rgba( 0, 0, 0, 0.1 );
+	width: 70%;
+	height: 400px;
+	padding: 20px 40px;
+	box-sizing: border-box;
+	margin-right: 20px;
+	border-radius: 2px;
+
+	#title {
+		font: 700 20px Roboto;
+		color: #19B5FE;
+		text-transform: uppercase;
+	}
+}

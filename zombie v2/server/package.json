@@ -1,0 +1,10 @@
+{
+	"name": "my-game",
+	"version": "1.0.0",
+	"description": "a game",
+	"dependencies": {
+        "socket.io": "latest",
+        "babel": "latest"
+	},
+	"author": "Ilya Shastin"
+}

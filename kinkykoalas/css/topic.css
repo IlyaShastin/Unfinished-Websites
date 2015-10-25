@@ -1,0 +1,575 @@
+#container {
+    width: 60vw;
+    margin-left: 20vw;
+    margin-right: 20vw;
+    min-height: 70vh;
+}
+
+#container #header {
+    border-bottom: 1px solid rgb( 230, 230, 230 );
+    border-top: 1px solid rgb( 230, 230, 230 );
+    margin-bottom: 40px;
+    padding-bottom: 20px;
+    padding-top: 20px;
+    padding-left: 20px;
+}
+
+#container #header img {
+    width: 25px;
+    height: 25px;
+    opacity: 0.7;
+    margin-right: 10px;
+}
+
+#container #header #title {
+    font: 25px Oswald;
+    color: rgb( 90, 90, 90 );
+    display: inline-block;
+}
+
+#container #header #options {
+    float: right;
+    display: inline-block;
+    padding-top: 10px;
+    margin-right: 20px;
+}
+
+#post {
+    display: inline-block;
+    width: 100%;
+    white-space: nowrap;
+}
+
+#post.reply {
+    width: 60vw;
+    margin-left: 20vw;
+    margin-right: 20vw;
+}
+
+#post #avatar {
+    width: 100px;
+    padding-left: 10px;
+    padding-right: 10px;
+    display: inline-block;
+    float: left;
+}
+
+#post #avatar img {
+    width: 100px;
+    height: 100px;
+    -webkit-mask: url("../../img/circle-mask.svg") top left / cover;
+}
+
+#post #avatar p {
+    text-align: center;
+    margin-top: 10px;
+    font: 15px Roboto;
+    color: rgb( 70, 70, 70 );
+}
+
+#post #avatar p.reply {
+    color: rgb( 255, 255, 255 );
+}
+
+#post #postdata {
+    width: calc( 100% - 200px );
+    display: inline-block;
+    float: right;
+    padding: 20px 40px;
+    position: relative;
+}
+
+#post #postdata span {
+    width: 20px;
+    height: 20px;
+    display: inline-block;
+    position: absolute;
+    top: 30px; bottom: 0;
+    right: 0; left: 30px;
+    background: white;
+    border-right: 1px solid rgb( 220, 220, 220 );
+    border-bottom: 1px solid rgb( 220, 220, 220 );
+    -webkit-transform: rotate(135deg);
+       -moz-transform: rotate(135deg);
+        -ms-transform: rotate(135deg);
+         -o-transform: rotate(135deg);
+}
+
+#post #postdata #postcont {
+    color: white;
+    box-sizing: border-box;
+    background: white;
+    border: 1px solid rgb( 230, 230, 230 );
+    box-shadow: 3px 3px 5px rgba(0,0,0,0.1);
+    padding: 40px 40px;
+    display: inline-block;
+    width: 100%;
+}
+
+#post #postdata #postcont #replypost {
+    color: rgb( 70, 70, 70 );
+    width: 100%;
+    overflow: hidden;
+    margin-bottom: 20px;
+}
+
+#post #postdata #postcont #replypost #left {
+    width: 48px;
+    float: left;
+    display: inline-block;
+}
+
+#post #postdata #postcont #replypost #left img {
+    width: 48px;
+    height: 48px;
+    -webkit-mask: url("../../img/circle-mask.svg") top left / cover;
+}
+
+#post #postdata #postcont #replypost #left p {
+    margin-top: 5px;
+    margin-right: 0;
+    width: 48px;
+    height: 40px;
+    word-break: break-all;
+    white-space: normal;
+    font: 12px Roboto;
+    color: rgb( 70, 70, 70 );
+    display: inline-block;
+    text-align: center;
+    float: none;
+}
+
+#post #postdata #postcont #replypost #right {
+    float: right;
+    display: inline-block;
+    width: calc( 100% - 88px );
+    padding: 20px 20px;
+    padding-top: 10px;
+    position: relative;
+} 
+
+#post #postdata #postcont #replypost #right span {
+    width: 10px;
+    height: 10px;
+    display: inline-block;
+    position: absolute;
+    top: 20px; bottom: 0;
+    right: 0; left: 15px;
+    background: white;
+    border-right: 1px solid rgb( 220, 220, 220 );
+    border-bottom: 1px solid rgb( 220, 220, 220 );
+    -webkit-transform: rotate(135deg);
+       -moz-transform: rotate(135deg);
+        -ms-transform: rotate(135deg);
+         -o-transform: rotate(135deg);
+}
+
+#post #postdata #postcont #replypost #right #msg {
+    box-sizing: border-box;
+    background: white;
+    border: 1px solid rgb( 230, 230, 230 );
+    box-shadow: 3px 3px 5px rgba(0,0,0,0.1);
+    padding: 40px 40px;
+    overflow: hidden;
+}
+
+#post #postdata #postcont #message {
+    color: rgb( 70, 70, 70 );
+    width: 100%;
+    overflow: hidden;
+    padding-bottom: 40px;
+}
+
+#post.reply #postdata #postcont #message {
+    max-height: 200px;
+    overflow: auto;
+}
+
+#post.reply #postdata #postcont #message::-webkit-scrollbar {
+    width: 5px;
+}
+
+#post.reply #postdata #postcont #message::-webkit-scrollbar-track {
+    background: transparent;
+}
+
+#post.reply #postdata #postcont #message::-webkit-scrollbar-thumb {
+    background: #26A65B;
+}
+
+#post #postdata #postcont #lastedit {
+    display: inline-block;
+    color: black;
+    width: 100%;
+    text-align: right;
+    padding-top: 10px;
+    padding-bottom: 5px;
+    font: 12px Roboto;
+    color: rgb( 190, 190, 190 );
+    font-style: italic;
+}
+
+#post #postdata #postcont #ratings {
+    float: left;
+    padding-top: 50px;
+    width: 50%;
+}
+
+#post #postdata #postcont #ratings a {
+    margin-right: 10px;
+}
+
+#post #postdata #postcont #ratings a:hover img {
+    opacity: 0.8;
+}
+
+#post #postdata #postcont #ratings img {
+    opacity: 0.5;
+}
+
+#post #postdata #postcont #options {
+    color: black;
+    float: right;
+    width: 50%;
+    text-align: right;
+    padding-top: 20px;
+}
+
+#post #postdata #postcont #options a {
+    margin-left: 10px;
+}
+
+#post #postdata #postcont #options img {
+    width: 16px;
+    height: 16px;
+    opacity: 0.6;
+}
+
+#post #postdata #postcont #options a:hover img {
+	opacity: 0.8;
+}
+
+#post #postdata p {
+    float: right;
+    margin-right: 10px;
+    margin-top: 20px;
+    color: rgb( 190, 190, 190 );
+    font-style: italic;
+}
+
+#replytopic {
+    border-top: 1px solid rgb( 230, 230, 230 );
+    padding-top: 20px;
+}
+
+#replytopic.reply {
+    width: 60vw;
+    margin-left: 20vw;
+    margin-right: 20vw;
+    margin-top: 40px;
+    background: white;
+    box-shadow: 3px 3px 5px rgba(0,0,0,0.1);
+    border: 2px solid rgb( 230, 230, 230 );
+    padding: 20px 20px;
+    padding-bottom: 70px;
+}
+
+#replytopic h2 {
+    font: 20px Roboto;
+    color: rgb( 90, 90, 90 );
+    display: inline-block;
+}
+
+#replytopic #markdown {
+    font: 13px Roboto;
+    color: rgb( 140, 140, 140 );
+    position: relative;
+    opacity: 1;
+    float: right;
+}
+
+#replytopic #markdown:hover {
+    color: #26A65B;
+}
+
+#replytopic textarea {
+    width: calc( 100% );
+	height: 200px;
+	background: white;
+    border: 1px solid #DADFE1;
+    margin-top: 20px;
+    color: #22313F;
+    padding: 10px;
+    font: 12px Roboto;
+    resize: none;
+    transition: border 300ms ease;
+}
+
+#replytopic textarea:focus {
+	border-color: #26A65B;
+}
+
+#replytopic textarea::-webkit-scrollbar {
+    width: 5px;
+}
+
+#replytopic textarea::-webkit-scrollbar-track {
+    background: transparent;
+}
+
+#replytopic textarea::-webkit-scrollbar-thumb {
+    background: #26A65B;
+}
+
+
+#replytopic input[type="submit"] {
+	margin-top: 20px;
+	margin-bottom: 20px;
+	float: right;
+	padding: 5px 10px;
+	font: 15px Oswald;
+	border: 2px solid #26A65B;
+	color: #26A65B;
+	background: white;
+	cursor: pointer;
+	transition: all 300ms ease;
+}
+
+#replytopic input[type="submit"]:hover {
+	background: #26A65B;
+	color: white;
+}
+
+#replytopic .cancel {
+	margin-top: 20px;
+	margin-bottom: 20px;
+	float: right;
+	padding: 5px 10px;
+	font: 15px Oswald;
+	border: 2px solid #EF4836;
+	color: #EF4836;
+	background: white;
+	cursor: pointer;
+	float: left;
+	transition: all 300ms ease;
+}
+
+#replytopic .cancel:hover {
+	background: #EF4836;
+	color: white;
+}
+
+
+
+
+
+
+#replyModal {
+    background: rgba( 0, 0, 0, 0.8 );
+    position: absolute;
+    top: 0; bottom: 0;
+    left: 0; right: 0;
+    padding-top: 100px;
+    opacity: 0;
+}
+
+#replyModal #modal {
+    width: 40vw;
+    height: 40vh;
+    background: white;
+    position: absolute;
+    top: 20vh;
+    left: 30vw;
+    box-shadow: 3px 3px 5px rgba(0,0,0,0.1);
+    border: 2px solid rgb( 230, 230, 230 );
+}
+
+
+
+
+#editModal {
+    background: rgba( 0, 0, 0, 0.8 );
+    position: absolute;
+    top: 0; bottom: 0;
+    left: 0; right: 0;
+    padding-top: 100px;
+    opacity: 0;
+}
+
+#editModal #edit {
+    width: 60vw;
+    background: white;
+    position: absolute;
+    top: 20vh;
+    left: 20vw;
+    box-shadow: 3px 3px 5px rgba(0,0,0,0.1);
+    border: 2px solid rgb( 230, 230, 230 );
+    padding: 40px 40px;
+    padding-bottom: 0;
+}
+
+#edit h2 {
+    font: 20px Roboto;
+    color: rgb( 90, 90, 90 );
+    display: inline-block;
+}
+
+#edit #markdown {
+    font: 13px Roboto;
+    color: rgb( 140, 140, 140 );
+    position: relative;
+    opacity: 1;
+    float: right;
+}
+
+#edit #markdown:hover {
+    color: #26A65B;
+}
+
+#edit textarea {
+    width: calc( 100% );
+	height: 400px;
+	background: white;
+    border: 1px solid #DADFE1;
+    margin-top: 20px;
+    color: #22313F;
+    padding: 10px;
+    font: 12px Roboto;
+    resize: none;
+    transition: border 300ms ease;
+}
+
+#edit textarea:focus {
+	border-color: #26A65B;
+}
+
+#edit textarea::-webkit-scrollbar {
+    width: 5px;
+}
+
+#edit textarea::-webkit-scrollbar-track {
+    background: transparent;
+}
+
+#edit textarea::-webkit-scrollbar-thumb {
+    background: #26A65B;
+}
+
+
+#edit input[type="submit"] {
+	margin-top: 20px;
+	margin-bottom: 20px;
+	float: right;
+	padding: 5px 10px;
+	font: 15px Oswald;
+	border: 2px solid #26A65B;
+	color: #26A65B;
+	background: white;
+	cursor: pointer;
+	transition: all 300ms ease;
+}
+
+#edit input[type="submit"]:hover {
+	background: #26A65B;
+	color: white;
+}
+
+#edit .cancel {
+	margin-top: 20px;
+	margin-bottom: 20px;
+	float: right;
+	padding: 5px 10px;
+	font: 15px Oswald;
+	border: 2px solid #EF4836;
+	color: #EF4836;
+	background: white;
+	cursor: pointer;
+	float: left;
+	transition: all 300ms ease;
+}
+
+#edit .cancel:hover {
+	background: #EF4836;
+	color: white;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+#deleteModal {
+    background: rgba( 0, 0, 0, 0.8 );
+    position: absolute;
+    top: 0; bottom: 0;
+    left: 0; right: 0;
+    padding-top: 100px;
+    opacity: 0;
+}
+
+#deleteModal #delete {
+    width: 200px;
+    background: white;
+    position: absolute;
+    top: 20vh;
+    left: calc( 50vw - 100px );
+    box-shadow: 3px 3px 5px rgba(0,0,0,0.1);
+    border: 2px solid rgb( 230, 230, 230 );
+    padding: 20px 20px;
+    padding-bottom: 0;
+}
+
+#delete h2 {
+    font: 20px Roboto;
+    color: rgb( 90, 90, 90 );
+    display: inline-block;
+    margin-bottom: 10px;
+}
+
+#delete p {
+    font: 14px Roboto;
+    color: rgb( 90, 90, 90 );
+}
+
+#delete input[type="submit"] {
+	margin-top: 20px;
+	margin-bottom: 20px;
+	float: right;
+	padding: 5px 10px;
+	font: 15px Oswald;
+	border: 2px solid #EF4836;
+	color: #EF4836;
+	background: white;
+	cursor: pointer;
+	transition: all 300ms ease;
+}
+
+#delete input[type="submit"]:hover {
+	background: #EF4836;
+	color: white;
+}
+
+#delete .cancel {
+	margin-top: 20px;
+	margin-bottom: 20px;
+	float: right;
+	padding: 5px 10px;
+	font: 15px Oswald;
+	border: 2px solid rgb( 150, 150, 150 );
+	color: rgb( 150, 150, 150 );
+	background: white;
+	cursor: pointer;
+	float: left;
+	transition: all 300ms ease;
+}
+
+#delete .cancel:hover {
+	background: rgb( 150, 150, 150 );
+	color: white;
+}

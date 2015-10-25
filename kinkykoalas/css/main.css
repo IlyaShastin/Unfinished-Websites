@@ -1,0 +1,63 @@
+@import url(https://fonts.googleapis.com/css?family=Oswald:400,300,700);
+@import url(https://fonts.googleapis.com/css?family=Roboto:400,100,300,500,700,900);
+ 
+* {
+	margin: 0;
+	padding: 0;
+}
+
+*::selection {
+    background: #26A65B;
+    color: #FFF;
+}
+
+*::-moz-selection {
+    background: #26A65B;
+    color: #FFF;
+}
+
+*::-o-selection {
+    background: #26A65B;
+    color: #FFF;
+}
+
+*::-ms-selection {
+    background: #26A65B;
+    color: #FFF;
+}
+
+*::-webkit-selection {
+    background: #26A65B;
+    color: #FFF;
+}
+
+input:focus,
+select:focus,
+textarea:focus,
+button:focus {
+    outline: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+html {
+    overflow-x: hidden;
+}
+
+body {
+    width: 100vw;
+    z-index: 2;
+    background: rgb( 240, 240, 240 );
+    background-image: url("../img/cream_pixels.png");
+    background-repeat: repeat;
+    overflow-x: hidden;
+    position: relative;
+}
+ 
+header {
+    width: 100vw;
+    height: 250px;
+    background: transparent;
+}

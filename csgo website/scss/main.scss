@@ -1,0 +1,75 @@
+
+@import url(https://fonts.googleapis.com/css?family=Andada);
+@import url(https://fonts.googleapis.com/css?family=Oxygen:400,700);
+
+$background: #0E1419;
+$backgroundOpac: rgba( 14, 20, 25, 0.5 );
+
+html, body {
+	padding: 0;
+	margin: 0;
+	background: transparent;
+	overflow-x: hidden;
+}
+
+html {
+	background: $background;
+}
+
+a {
+	text-decoration: none;
+}
+
+#content {
+	width: 80vw;
+	margin-left: 10vw;
+	margin-right: 10vw;
+	z-index: 1;
+
+	#SponsSpace {
+		display: inline-block;
+		width: 100%;
+		height: 100px;
+		padding-top: 20px;
+		padding-bottom: 20px;
+	}
+}
+
+
+#video {
+	position: absolute;
+	top: 0; bottom: 0;
+	left: 0; right: 0;
+	z-index: -100;
+	height: 100vh;
+	overflow: hidden;
+
+	video#cinematics {
+		width: 100vw;	
+		z-index: -99;
+		//background: url(polina.jpg) no-repeat;
+	    //background-size: cover; 
+	}
+}
+
+#cinematicsMask {
+	position: absolute;
+	top: 0; bottom: 0;
+	left: 0; right: 0;
+	z-index: -98;
+	background: $background;
+	opacity: 0.8;
+}
+
+#cinematicsFadeMask {
+	position: absolute;
+	top: -10vh; bottom: 0;
+	left: -10vw; right: 0;
+	z-index: -98;
+	height: 110vh;
+	width: 120vw;
+	background: -webkit-radial-gradient(ellipse at top, transparent 50%, $background 70%); /* Safari 5.1-6.0 */
+	background: -o-radial-gradient(ellipse at top, transparent 50%, $background 70%); /* For Opera 11.6-12.0 */
+	background: -moz-radial-gradient(ellipse at top, transparent 50%, $background 70%); /* For Firefox 3.6-15 */
+	background: radial-gradient(ellipse at top, transparent 50%, $background 70%);
+}

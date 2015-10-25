@@ -1,0 +1,8 @@
+
+#Avatar {
+	display: inline-block;
+
+	img {
+		-webkit-mask: url("../../../img/circle-mask.svg") top left / cover;
+	}
+}

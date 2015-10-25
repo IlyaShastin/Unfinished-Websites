@@ -1,0 +1,91 @@
+
+#ChatBox {
+	display: inline-block;
+	width: calc( 60vw - 10px );
+	height: 40vh;
+	box-sizing: border-box;
+	margin-right: 10px;
+	float: left;
+	margin-top: 10px;
+	background: #202E3B;
+	box-shadow: 1px 1px 10px 5px rgba( 0, 0, 0, 0.1 );
+
+	#heading {
+		padding-top: 20px;
+		padding-bottom: 10px;
+		position: relative;
+		left: 20px;
+		width: calc( 100% - 40px );
+		font: 18px Roboto;
+		color: rgba( 255, 255, 255, 0.7 );
+		margin: 0;
+		border-bottom: 1px solid rgba( 255, 255, 255, 0.1 );
+	}
+
+	#messageList {
+		display: inline-block;
+		width: 100%;
+		height: calc( 100% - 94px );
+		overflow: scroll;
+		overflow-x: hidden;
+		padding-top: 5px;
+		padding-bottom: 5px;
+		box-sizing: border-box;
+
+		&::-webkit-scrollbar {
+		    width: 5px;
+		}
+		 
+		&::-webkit-scrollbar-track {
+		    background: transparent;
+		}
+		 
+		&::-webkit-scrollbar-thumb {
+			background: #33485C;
+			border-radius: 5px;
+		}
+
+		#ChatMessage {
+			width: 100%;
+			display: inline-block;
+			box-sizing: border-box;
+			padding: 2px 20px;
+
+			#name {
+				font: 700 15px Roboto;
+				color: #415C78;
+				display: inline-block;
+				float: left;
+				margin: 0;
+			}
+
+			#msg {
+				font: 15px Roboto;
+				color: rgba( 255, 255, 255, 0.4 );
+				display: inline-block;
+				padding-left: 10px;
+				margin: 0;
+			}
+		}
+		
+	}
+
+	#ChatInput {
+		width: 100%;
+		height: 40px;
+
+		input {
+			width: 100%;
+			height: 40px;
+			padding: 10px 10px;
+			border: none;
+			font: 13px Roboto;
+			background: rgba( 107, 185, 240, 0.1 );
+			color: white;
+
+			&:focus {
+				outline: none;
+			}
+		}
+	}
+}

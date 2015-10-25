@@ -1,0 +1,182 @@
+
+#container {
+    min-height: 70vh;
+    background: transparent;
+    box-shadow: none;
+}
+
+#container #header a {
+    background: #00B16A;
+    color: white;
+    padding: 5px 10px;
+    float: right;
+    font: 15px Oswald;
+    margin-right: 20px;
+    box-sizing: border-box;
+    border: 1px solid #3FC380;
+    position: relative;
+    bottom: 2px;
+}
+
+#container #header a img {
+    margin-right: 10px;
+    position: relative;
+    top: 1px;
+}
+
+#container #subForum #name #ava {
+    float: left;
+    margin-left: 20px;
+    margin-right: 20px;
+    -webkit-mask: url("../../img/circle-mask.svg") top left / cover;
+}
+
+#container #subForum #name #icon {
+    width: 16px;
+    height: 16px;
+}
+
+#container #subForum #name h1 {
+    display: inline-block;
+    margin-top: 10px;
+    margin-left: 0 !important;
+}
+
+#container #subForum #name h2 {
+    display: inline-block;
+    margin-left: 0 !important;
+}
+
+#container #subForums #subForum #stats {
+    margin-top: 10px;
+}
+
+#container #subForums #subForum #activity {
+    margin-top: 10px;
+}
+
+#container #subForums #subForum #activity h1 {
+    font-weight: normal;
+    color: rgb( 150, 150, 150 );
+}
+
+#createbg {
+    position: absolute;
+    top: 0; bottom: 0;
+    left: 0; right: 0;
+    width: 100vw;
+    height: 100vh;
+    background: rgba( 0, 0, 0, 0.5 );
+    opacity: 0;
+}
+
+#create {
+    width: 40vw;
+    height: 60vh;
+    background: white;
+    position: absolute;
+    top: 20vh;
+    left: 30vw;
+    box-shadow: 3px 3px 5px rgba(0,0,0,0.1);
+    border: 2px solid rgb( 230, 230, 230 );
+}
+
+#create h1 {
+    font: 25px Oswald;
+    display: inline-block;
+    margin-top: 10px;
+    margin-left: 20px;
+}
+
+#create a {
+    float: right;
+    margin-top: 20px;
+    margin-right: 20px;
+    opacity: 0.3;
+}
+
+#create h2 {
+    font: 16px Roboto;
+    color: rgb( 150, 150, 150 );
+    margin-top: 40px;
+    margin-left: 20px;
+    display: inline-block;
+}
+
+#create #markdown {
+    font: 13px Roboto;
+    color: rgb( 140, 140, 140 );
+    position: relative;
+    top: 20px;
+    opacity: 1;
+}
+
+#create #markdown:hover {
+    color: #26A65B;
+}
+
+#create input, #create textarea {
+    margin-top: 10px;
+    margin-left: 20px;
+}
+
+#create input[type="text"] {
+    width: 50%;
+	height: 30px;
+	background: white;
+    border: 1px solid #DADFE1;
+    color: #22313F;
+    padding-left: 10px;
+    font: 12px Roboto;
+    transition: border 300ms ease;
+}
+
+#create input[type="text"]:focus {
+	border-color: #26A65B;
+
+}
+
+#create textarea {
+    width: calc( 100% - 40px );
+	height: 50%;
+	background: white;
+    border: 1px solid #DADFE1;
+    color: #22313F;
+    padding: 10px;
+    font: 12px Roboto;
+    resize: none;
+    transition: border 300ms ease;
+}
+
+#create textarea:focus {
+	border-color: #26A65B;
+}
+
+#create textarea::-webkit-scrollbar {
+    width: 5px;
+}
+
+#create textarea::-webkit-scrollbar-track {
+    background: transparent;
+}
+
+#create textarea::-webkit-scrollbar-thumb {
+    background: #26A65B;
+}
+
+
+#create input[type="submit"] {
+	margin-top: 20px;
+	padding: 5px 10px;
+	font: 15px Oswald;
+	border: 2px solid #26A65B;
+	color: #26A65B;
+	background: transparent;
+	cursor: pointer;
+	transition: all 300ms ease;
+}
+
+#create input[type="submit"]:hover {
+	background: #26A65B;
+	color: white;
+}

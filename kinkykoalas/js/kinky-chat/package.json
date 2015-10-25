@@ -1,0 +1,11 @@
+{
+	"name": "kinky-koalas-chatbox",
+	"version": "1.0.0",
+	"description": "Realtime chatbox for kinky koalas including in game chat.",
+	"dependencies": {
+        "socket.io": "latest",
+        "express": "latest",
+        "bignumber.js": "1.0.x"
+	},
+	"author": "Ilya Shastin"
+}

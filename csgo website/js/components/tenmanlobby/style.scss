@@ -1,0 +1,276 @@
+@import url(https://fonts.googleapis.com/css?family=Nunito);
+
+@-webkit-keyframes dot {
+    0% {
+        opacity: 0;
+    }
+    50% {
+        opacity: 0.5;
+    }
+    100% {
+        opacity: 0;
+    }
+}
+
+@keyframes dot {
+    0% {
+        opacity: 0;
+    }
+    50% {
+        opacity: 0.5;
+    }
+    100% {
+        opacity: 0;
+    }
+}
+
+#TenManLobby {
+	display: inline-block;
+	width: calc( 60vw - 10px );
+	box-sizing: border-box;
+	border-radius: 2px;
+	margin-right: 10px;
+	float: left;
+
+	#lobbyHeading {
+		text-transform: uppercase;
+		padding: 20px 20px;
+		background: #202E3B;
+		box-shadow: 1px 1px 10px 5px rgba( 0, 0, 0, 0.1 );
+		font: 18px Roboto;
+		color: rgba( 255, 255, 255, 0.7 );
+		margin-bottom: 20px;
+
+		i {
+			font: 12px Roboto;
+			color: rgba( 255, 255, 255, 0.5 );
+			margin-left: 10px;
+		}
+	}
+
+	#localUserInfo {
+		display: inline-block;
+		height: 128px;
+		width: 40%;
+		float: left;
+
+		#Avatar {
+			float: left;
+		}
+
+		#userName {
+			color: #19B5FE !important;
+			font: 700 18px Roboto !important;
+			text-transform: uppercase;
+		}
+
+		#favoriteWep {
+			position: relative;
+			bottom: 15px;
+
+			img {
+				position: relative;
+				top: 10px;
+				opacity: 0.7;
+			}
+		} 
+
+		#games {
+			position: relative;
+			bottom: 15px;
+
+			#green {
+				color: #2ECC71;
+			}
+
+			#red {
+				color: #EF4836;
+			}
+		}
+
+		#userName, #proficiency, #favoriteWep, #games {
+			font: 13px Roboto;
+			width: calc(100% - 148px);
+			display: inline-block;
+			color: rgba( 255, 255, 255, 0.7 );
+			float: left;
+			margin: 0;
+			margin-top: 10px;
+			margin-left: 20px;
+		}
+
+	}
+
+	#options {
+		display: inline-block;
+		text-align: center;
+		height: 128px;
+		width: 60%;
+		box-sizing: border-box;
+		float: left;
+		padding-left: 20px;
+		padding-right: 20px;
+
+		#bestof {
+			margin: 0;
+			display: inline-block;
+			float: right;
+			padding-top: 10px;
+			padding-left: 40px;
+			padding-right: 40px;
+
+			input[type="radio"] {
+			    display: none;
+
+			    & + label {
+			    	color: white;
+			    	font: 700 30px Roboto;
+			    }
+
+			    &:checked + label {
+			    	color: #19B5FE;
+			    }
+			}
+		}
+
+		#maps {
+			width: calc( 80px * 5 );
+			margin: 0;
+			display: inline-block;
+			float: right;
+			padding-top: 15px;
+
+			a {
+				display: inline-block;
+				position: relative;
+				float: right;
+
+				img {
+					width: 70px;
+					padding: 5px 5px;
+				}
+
+				&.cache::after { content: "CACHE"; }
+				&.cobble::after { content: "COBBLE"; }
+				&.dust2::after { content: "DUST 2"; }
+				&.inferno::after { content: "INFERNO"; }
+				&.mirage::after { content: "MIRAGE"; }
+				&.nuke::after { content: "NUKE"; }
+				&.overpass::after { content: "OVERPASS"; }
+				&.season::after { content: "SEASON"; }
+				&.train::after { content: "TRAIN"; }
+
+				&::after {
+					font: 700 15px Roboto;
+					color: white;
+					text-shadow: 1px 1px 5px black;
+					display: inline-block;
+					position: absolute;
+					top: 15px; bottom: 0;
+					left: 0; right: 0;
+				}
+			}
+		}
+	}
+
+	#players {
+		display: inline-block;
+		margin-top: 20px;
+		width: 100%;
+		margin-bottom: 10px;
+		border-radius: 2px;
+		white-space: nowrap;
+		border-top: 1px solid rgba( 255, 255, 255, 0.05 );
+
+		.noplayer {
+			display: inline-block;
+			width: 11%;
+			text-align: center;
+			border-right: 1px solid rgba( 255, 255, 255, 0.05 );
+			box-size: border-box;
+			float: left;
+
+			img {
+				width: 50%;
+				margin-top: 25%;
+				opacity: 0.1;
+			}
+
+			h1 {
+				font: 700 13px Roboto;
+				color: rgba( 255, 255, 255, 0.7 );
+				text-align: center;
+
+				.one {
+				    opacity: 0;
+				    -webkit-animation: dot 1.3s infinite;
+				    -webkit-animation-delay: 0.0s;
+				    animation: dot 1.3s infinite;
+				    animation-delay: 0.0s;
+				}
+
+				.two {
+				    opacity: 0;
+				    -webkit-animation: dot 1.3s infinite;
+				    -webkit-animation-delay: 0.2s;
+				    animation: dot 1.3s infinite;
+				    animation-delay: 0.2s;
+				}
+
+				.three {
+				    opacity: 0;
+				    -webkit-animation: dot 1.3s infinite;
+				    -webkit-animation-delay: 0.3s;
+				    animation: dot 1.3s infinite;
+				    animation-delay: 0.3s;
+				}
+			}
+
+			&:last-child {
+				border-right: none;
+			}
+		}
+
+		.player {
+			display: inline-block;
+			width: 11%;
+			text-align: center;
+			border-right: 1px solid rgba( 255, 255, 255, 0.05 );
+			box-size: border-box;
+			float: left;
+			position: relative;
+
+			#Avatar {
+				width: 50%;
+				margin-top: 25%;
+
+				img {
+					width: 100%;
+				}
+			}
+
+			#kick {
+				position: absolute;
+				top: 3px; bottom: 0;
+				left: calc( 100% - 25px ); right: 0;
+				font: 15px Nunito;
+				text-align: center;
+				color: #EF4836;
+
+				&.cannotKick {
+					display: none;
+				}
+			}
+
+			h1 {
+				font: 700 13px Roboto;
+				color: rgba( 255, 255, 255, 0.7 );
+				text-align: center;
+			}
+
+			&:last-child {
+				border-right: none;
+			}
+		}
+	}
+}

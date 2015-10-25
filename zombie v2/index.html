@@ -1,0 +1,27 @@
+<html>
+    <head>
+        <meta charset = "utf-8" />
+        <title>z0mb13z - Ilya Shastin</title>
+
+        <script src = "client/init.js"></script>
+        <script src = "client/classes/player.js"></script>
+        <script src = "client/classes/game.js"></script>
+        <link href="css/main.css" rel="stylesheet" type="text/css"/>
+        <script src="http://code.jquery.com/jquery-1.11.3.min.js"></script>
+        <script src="https://cdn.socket.io/socket.io-1.2.0.js"></script>
+    </head>
+
+    <body onload = "startGame()">
+        <div id = "game" >
+            <canvas id = "canvas"></canvas>
+        </div>
+        <div id = "menu" >
+            <p>Z0mb13z n' 5h1ts</p>
+            <i>Total Servers: 0</i>
+            <i>Total Players: 0</i>
+            <h1 id = "errorText" > </h1>
+            <input type = "text" name = "server" placeholder = "server address" id = "serverAddress" ></input>
+            <a href = "#" id = "joinServer" >JOIN</a>
+        </div>
+    </body>
+</html>

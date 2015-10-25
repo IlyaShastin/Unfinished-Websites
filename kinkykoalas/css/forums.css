@@ -1,0 +1,153 @@
+
+#container {
+    width: 60vw;
+    margin-left: 20vw;
+    margin-right: 20vw;
+    margin-bottom: 40px;
+    background: white;
+    display: inline-block;
+    box-sizing: border-box;
+}
+
+#container #header {
+    background: #404040;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 20px;
+    box-shadow: 3px 3px 5px rgba(0,0,0,0.1);
+}
+
+#container #header h1 {
+    display: inline-block;
+    font: 20px Oswald;
+    color: white;
+    text-transform: uppercase;
+}
+
+#container #header h2 {
+    display: inline-block;
+    margin-left: 20px;
+    color: rgba( 255, 255, 255, 0.3 );
+    font: 18px Roboto;
+    -webkit-text-stroke: 1px rgba(0,0,0,0.3);
+}
+
+
+#container #subheader {
+    background: #666666;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    padding-left: 20px;
+    padding-right: 20px;
+    white-space: nowrap;
+     box-shadow: 3px 3px 5px rgba(0,0,0,0.1);
+}
+
+#container #subheader h1, #container #subheader h2, #container #subheader h3 {
+    display: inline-block;
+    font: 13px Roboto;
+    color: rgba( 255, 255, 255, 0.3 );
+    -webkit-text-stroke: 1px rgba(0,0,0,0.1);
+}
+
+#container #subheader h1 {
+    width: 60%;
+}
+
+#container #subheader h2 {
+    width: 20%;
+    text-align: right;
+}
+
+#container #subheader h3 {
+    width: 20%;
+    margin-left: 40px;
+}
+
+#container #subForums {
+    box-shadow: 3px 3px 5px rgba(0,0,0,0.1);
+}
+
+#container #subForums #subForum {
+    width: 100%;
+    display: inline-block;
+    white-space: nowrap;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    box-sizing: border-box;
+    background: white;
+    border-left: 2px solid rgb( 230, 230, 230 );
+    border-right: 2px solid rgb( 230, 230, 230 );
+    border-bottom: 2px solid rgb( 230, 230, 230 );
+}
+
+#container #subForums #subForum.even {
+    background: rgb( 245, 245, 245 );
+}
+
+
+#container #subForums #subForum #name {
+    width: 60%;
+    float: left;
+}
+
+#container #subForums #subForum #name h1 {
+    font: 18px Roboto;
+    color: rgb( 10, 10, 10 );
+    margin-left: 20px;
+    font-weight: bold;
+}
+
+#container #subForums #subForum #name h2 {
+    font: 15px Roboto;
+    color: rgb( 150, 150, 150 );
+    margin-left: 20px;
+}
+
+
+
+#container #subForums #subForum #stats {
+    width: 20%;
+    float: left;
+}
+
+#container #subForums #subForum #stats h1 {
+    font: 14px Roboto;
+    color: rgb( 150, 150, 150 );
+    text-align: right;
+    margin-right: 10px;
+}
+
+#container #subForums #subForum #stats h2 {
+    font: 14px Roboto;
+    color: rgb( 150, 150, 150 );
+    text-align: right;
+    margin-right: 10px;
+}
+
+
+
+#container #subForums #subForum #activity {
+    width: 20%;
+    float: left;
+}
+
+#container #subForums #subForum #activity h1 {
+    font: 14px Roboto;
+    color: rgb( 10, 10, 10 );
+    margin-left: 40px;
+    display: inline-block;
+    font-weight: bold;
+}
+
+#container #subForums #subForum #activity h2 {
+    font: 14px Roboto;
+    color: rgb( 100, 100, 100 );
+    margin-left: 40px;
+    display: inline-block;
+}
+
+#container #subForums #subForum #activity h2 a {
+    font-weight: bold;
+    color: #26A65B;
+}

@@ -1,0 +1,106 @@
+@import url(https://fonts.googleapis.com/css?family=Bangers);
+@import url(https://fonts.googleapis.com/css?family=Roboto);
+
+input:focus,
+select:focus,
+textarea:focus,
+button:focus {
+    outline: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+body {
+    overflow: hidden;
+    margin: 0;
+}
+
+#game {
+    width: 100vw;
+    height: 100vh;
+    position: absolute;
+    left: 0; right: 0;
+    bottom: 0; top: 0;
+    display: none;
+}
+
+#game #canvas {
+    background: white;
+}
+
+#menu {
+    width: 100vw;
+    height: 100vh;
+    position: absolute;
+    left: 0; right: 0;
+    bottom: 0; top: 0;
+    background: white;
+    text-align: center;
+    display: none;
+}
+
+#menu p {
+    font: 50px Bangers;
+    width: 100vw;
+    color: #26A65B;
+    text-align: center;
+}
+
+#menu i {
+    font: 20px Roboto;
+    color: black;
+    margin-left: 30vw;
+    margin-right: 30vw;
+    width: 40vw;
+    display: inline-block;
+    text-align: center;
+    overflow: hidden;
+}
+
+#menu a {
+    font: 12px Roboto;
+    color: black;
+    display: inline-block;
+    text-align: center;
+    padding: 5px 10px;
+    color: #26A65B;
+    border: 1px solid #26A65B;
+    position: relative;
+    top: 9px;
+    display: inline-block;
+    overflow: hidden;
+    transition: all 300ms ease;
+}
+
+#menu a:hover {
+    color: white;
+    background: #26A65B;
+}
+
+#menu input[type="text"] {
+    display: inline-block;
+    text-align: center;
+	background: white;
+    border: 1px solid #DADFE1;
+    color: #22313F;
+    padding: 5px 10px;
+    font: 12px Roboto;
+    transition: border 300ms ease;
+}
+
+#menu input[type="text"].error {
+    border: 1px solid #EF4836;
+}
+
+#menu input[type="text"]:focus {
+	border-color: #26A65B;
+}
+
+#menu h1 {
+    margin-top: 20px;
+    font: 15px Roboto;
+    color: #EF4836;
+    text-transform: uppercase;
+}

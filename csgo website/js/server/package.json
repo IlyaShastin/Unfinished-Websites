@@ -1,0 +1,11 @@
+{
+	"name": "CSGO-Tenman-Organizer",
+	"version": "1.0.0",
+	"description": "Create a tenman in real time.",
+	"dependencies": {
+        "socket.io": "latest",
+        "steam-web": "latest",
+        "mysql": "latest"
+	},
+	"author": "Ilya Shastin"
+}

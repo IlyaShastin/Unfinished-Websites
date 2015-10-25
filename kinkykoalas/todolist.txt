@@ -1,0 +1,18 @@
+--- CHATBOX 
+
+- add secret emotes
+- add more emotes
+- add user colors based on rank
+- add spam protection
+- manage message handling based on room
+
+
+--- FORUMS
+
+- get player rank from DB
+- add page buttons subforum and topic
+- get last post from subforum and topic
+- add markdown
+- cache players and posts for faster loading
+- add ratings through node.js
+- finish ratings system

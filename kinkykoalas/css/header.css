@@ -1,0 +1,154 @@
+
+#headerbg {
+    width: 60vw;
+    position: absolute;
+    top: -70px; bottom: 0;
+    left: 20vw; right: 0;
+    
+    z-index: -1;
+}
+
+#navBar {
+    width: 60vw;
+    height: 60px;
+    margin-left: 20vw;
+    margin-right: 20vw;
+    display: inline-block;
+    position: relative;
+    top: 50px;
+    
+    background: white;
+    border: 1px solid rgb( 230, 230, 230 );
+    border-bottom: 2px solid rgb( 150, 150, 150 );
+    box-shadow: 3px 3px 5px rgba(0,0,0,0.1);
+}
+
+#navBar #logo {
+    width: 30px;
+    height: 30px;
+    margin-left: 15px;
+    margin-top: 15px;
+    display: inline-block;
+}
+
+#navBar #logoText {
+    font: 15px Oswald;
+    color: rgb( 50, 50, 50 );
+    margin-left: 10px;
+    display: inline-block;
+    position: relative;
+    bottom: 8px;
+}
+
+#pageNav {
+    display: inline-block;
+    float: right;
+    margin-right: 20px;
+    position: relative;
+    top: 22px;
+}
+
+#pageNav li {
+    display: inline-block;
+    margin-left: 5px;
+    margin-right: 5px;
+}
+
+#pageNav li #pageButton {
+    font: 12px Roboto;
+    color: rgb( 150, 150, 150 );
+    text-transform: uppercase;
+    position: relative;
+} 
+
+#pageNav li #pageButton.current {
+    color: #26A65B;
+    border-bottom: 2px solid #26A65B;
+}
+
+#pageNav li #pageButton:hover {
+    color: #26A65B;
+}
+
+#pageNav li img {
+    width: 8px;
+    height: 8px;
+    opacity: 0.5;
+    margin-left: 5px;
+}
+
+#pageNav li div {
+    height: 100%;
+}
+
+#pageNav li div:hover ul {
+    visibility: visible;
+}
+
+#pageNav li ul {
+    visibility: hidden;
+    position: absolute;
+    display: initial;
+    z-index: 10;
+    background: white;
+    border: 1px solid rgb( 230, 230, 230 );
+    box-shadow: 3px 3px 5px rgba(0,0,0,0.1);
+    width: 150px;
+    padding: 10px 10px;
+    margin-top: 10px;
+}
+
+#pageNav li ul li {
+    display: block;
+    width: 100%;
+    
+}
+
+#pageNav li ul li a {
+    display: inline-block;
+    margin-top: 3px;
+    margin-bottom: 3px;
+    font: 12px Roboto;
+    color: rgb( 150, 150, 150 );
+    text-transform: uppercase;
+}
+
+#pageNav li ul li a:hover {
+    color: #26A65B;
+}
+
+#profileBar {
+    background: transparent;
+    width: 60vw;
+    height: 110px;
+    margin-left: 20vw;
+    margin-right: 20vw;
+    position: relative;
+    top: 60px;
+}
+
+#profileBar #avatar {
+    width: 64px;
+    height: 64px;
+    float: right;
+    margin-right: 15px;
+    margin-top: 15px;
+    -webkit-mask: url("../img/circle-mask.svg") top left / cover;
+}
+
+#profileBar #logout {
+    font: 12px Roboto;
+    color: white;
+    background: #EF4836;
+    padding: 2px 5px;
+    float: right;
+    position: relative;
+    top: 84px;
+    left: 58px;
+}
+
+#profileBar #login {
+    float: right;
+    margin-right: 15px;
+    margin-top: 35px;
+}
